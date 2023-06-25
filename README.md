@@ -1,4 +1,5 @@
 # Where will users book their first travel destination?
+Airbnb users have over 190 countries to choose from for their first booking. If we can accurately predict which country a new user will book their first trip in, it would allow Airbnb to provide more personalized through emails, on their homepage, and from third-party advertisers. They could also provide coupons to entice potential customers and decrease the amount of time customer’s wait before booking. 
 
 ## Data Processing Steps
 
