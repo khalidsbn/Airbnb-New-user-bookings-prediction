@@ -28,12 +28,3 @@ To work with categorical data, I encoded the selected categorical columns using 
 
 I extracted text features from the 'sessions.csv' dataset. Specifically, I focused on the 'device_type' column and determined the most frequent device type for each user. Additionally, I combined the 'action', 'action_type', and 'action_detail' columns to create a new feature called 'actions'. I transformed the 'actions' column into a single string representation for each user. To further process the text data, I used TF-IDF (Term Frequency-Inverse Document Frequency) vectorization.
 
-7. **Merge Text Features**
-
-To create a comprehensive representation of the user's actions and device usage, I merged the text features extracted from the 'sessions.csv' dataset with the 'device_type' feature into a new dataset.
-
-8. **Merge & Check Data**
-
-Finally, I merged the text features dataset with the original dataset. I thoroughly checked the resulting dataset for any remaining missing values to ensure the data was complete and ready for the subsequent stages of the machine learning project.
-
-These steps represent the data processing stage of my machine learning project.
