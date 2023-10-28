@@ -1,0 +1,8 @@
+pandas
+nunpy
+seaborn 
+matplotlib
+warnings
+lightgbm 
+xgboost
+scikit-learn
