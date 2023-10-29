@@ -1,5 +1,37 @@
 # Where will users book their first travel destination?
-Airbnb users have over 190 countries to choose from for their first booking. If we can accurately predict which country a new user will book their first trip in, it would allow Airbnb to provide more personalized through emails, on their homepage, and from third-party advertisers. They could also provide coupons to entice potential customers and decrease the amount of time customer’s wait before booking. 
+
+## Introduction
+Airbnb users have over 190 countries to choose from for their first booking. If we can accurately predict which country a new user will book their first trip in, it would allow Airbnb to provide more personalized through emails, on their homepage, and from third-party advertisers. They could also provide coupons to entice potential customers and decrease the amount of time customers wait before booking.
+
+## Repository Structure
+* **README.md**: The top-level README for reviewers of this project
+* **data**:
+    1. **train_users_2.csv**: users main dataset. 
+* **notebooks**:
+    1. **01.datat_visualication.ipynb**: visualize train_users_2 dataset
+    2. **02.data_processing**: First process the main dataset, then the sessions dataset that contains information about users' browsing.
+    3. **03.model.ipynp**: Try 3 algorithms and compare their scores.
+
+ ## Requirements
+In order to "run" the provided codes; jupyter notebook or vsCode.
+
+## Libraries
+* pandas
+* NumPy
+* seaborn 
+* matplotlib
+* warnings
+* scikit-learn
+
+## Algorithms
+* Random forest
+* lightgbm
+* xgboost
+
+image
+
+## Known issues
+sessions.csv wasn't included in the data folder due to its huge size. 
 
 ## Data Processing Steps
 
@@ -19,7 +51,7 @@ To understand the relationships between different variables, I computed the corr
 
 4. **Object Features**
 
-I selected categorical columns, excluding 'id' and 'country_destination', and handled missing values in the 'first_affiliate_tracked' and 'gender' columns. I filled these missing values with the mode value. Additionally, I processed the 'gender' column by replacing 'OTHER' and '-unknown-' values with NaN and generating random values based on the distribution of existing gender values.
+I selected categorical columns, excluding 'id' and 'country_destination', and handling missing values in the 'first_affiliate_tracked' and 'gender' columns. I filled these missing values with the mode value. Additionally, I processed the 'gender' column by replacing 'OTHER' and '-unknown-' values with NaN and generating random values based on the distribution of existing gender values.
 
 5. **Encoder**
 
@@ -27,5 +59,5 @@ To work with categorical data, I encoded the selected categorical columns using 
 
 6. **Text Features**
 
-I extracted text features from the 'sessions.csv' dataset. Specifically, I focused on the 'device_type' column and determined the most frequent device type for each user. Additionally, I combined the 'action', 'action_type', and 'action_detail' columns to create a new feature called 'actions'. I transformed the 'actions' column into a single string representation for each user. To further process the text data, I used TF-IDF (Term Frequency-Inverse Document Frequency) vectorization.
+I extracted text features from the 'sessions.csv' dataset. Specifically, I focused on the 'device_type' column and determined the most frequent device type for each user. Additionally, I combined the 'action', 'action_type', and 'action_detail' columns to create a new feature called 'actions'. I transformed the 'actions' column into a single-string representation for each user. To further process the text data, I used TF-IDF (Term Frequency-Inverse Document Frequency) vectorization.
 
