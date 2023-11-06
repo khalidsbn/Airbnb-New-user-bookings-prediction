@@ -1,8 +1,5 @@
 pandas
-nunpy
-seaborn 
-matplotlib
-warnings
+numpy
 lightgbm 
 xgboost
 scikit-learn

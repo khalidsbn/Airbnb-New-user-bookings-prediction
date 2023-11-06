@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>AirBnB</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Avoid losing time</h1>
+
+        <div class="login">
+            <!-- Main Input For Receiving Query to our ML -->
+            <form action="{{ url_for('predict')}}" method="post" class="input-group">
+                {{ prediction_text }}
+
+                <br>
+
+                <p>
+                    make an app the tell the new users if they canna bok or not, so if it is not it is the best for them to delete the app
+                    and don't lose their time.
+                </p>
+
+                <!--gender (object)-->
+                <p>gender:
+                    <select name="gender" required="required">
+                        <option value="">...</option>
+                        <option value="FEMALE">F</option>
+                        <option value="MALE">M</option>
+                    </select>
+                </p>
+
+                <!--age (float64)-->
+                <p>Age:
+                    <input type="text" name="age" required="required" />
+                </p>
+
+                <!--language (float64)-->
+                <p>Your first Language:
+                    <select name="language" required="required">
+                        <option value="">...</option>
+                        <option value="english">English</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="french">French</option>
+                        <option value="spanish">Spanish</option>
+                        <option value="german">German</option>
+                        <option value="korean">Korean</option>
+                        <option value="italian">Italian</option>
+                        <option value="russian">Russian</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>                
+
+                <!--year_account_created (int)-->
+                <p>When you created your account (year):
+                    <select name="year_account_created" required="required">
+                        <option value="">...</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                    </select>
+                </p>
+
+                <!--month_account_created (int)-->
+                <p>When you created your account (year):
+                    <select name="month_account_created" required="required">
+                        <option value="">...</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </p>                
+
+                <!--signup_method (object)-->
+                <p>Signup method:
+                    <select name="signup_method" required="required">
+                        <option value="">...</option>
+                        <option value="basic">Using Email to sign up</option>
+                        <option value="facebook">Using Facebook to sign up</option>
+                        <option value="google">Using Google to sign up</option>
+                    </select>
+                </p>
+
+                <!--affiliate_provider (object)-->
+                <p>Affiliate provider:
+                    <select name="affiliate_provider" required="required">
+                        <option value="">...</option>
+                        <option value="direct">Direct</option>
+                        <option value="google">Google</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="bing">Bing</option>
+                        <option value="yahoo">Yahoo</option>
+                        <option value="other">Other</option>
+                    </select>
+                </p>                
+
+                <!--first_affiliate_tracked (object)-->
+                <p>Where did you see the airbnb for the first time:
+                    <select name="first_affiliate_tracked" required="required">
+                        <option value="">...</option>
+                        <option value="ads">Ads</option>
+                        <option value="product">Product</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="local business">local business</option>
+                        <option value="untracked">Don't remember</option>
+                    </select>
+                </p>
+
+                <!--signup_app (object)-->
+                <p>Signup App:
+                    <select name="signup_app" required="required">
+                        <option value="">...</option>
+                        <option value="Web">Web</option>
+                        <option value="iOS">iOS</option>
+                        <option value="Moweb">Moweb</option>
+                        <option value="Android">Android</option>
+                    </select>
+                </p>
+
+                <!--first_device_type (object)-->
+                <p>First device type:
+                    <select name="first_device_type" required="required">
+                        <option value="">...</option>
+                        <option value="MacBook">MacBook</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="iPhone">iPhone</option>
+                        <option value="iPad">iPad</option>
+                        <option value="Android Phone">OAndroid Phone</option>
+                        <option value="Android Tablet">Android Tablet
+                        </option>
+                    </select>
+                </p>
+
+                <!--first_browser (object)-->
+                <p>First browser:
+                    <select name="first_browser" required="required">
+                        <option value="">...</option>
+                        <option value="Google Chrome">Google Chrome</option>
+                        <option value="Microsoft Edge">Microsoft Edge</option>
+                        <option value="Safari">Safari</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Other Browser">Other Browser</option>
+                    </select>
+                </p>
+
+                <button type="submit" class="btn btn-primary btn-block btn-large">Answer</button>
+            </form>
+
+            <br><br>
+            <!--{{ prediction_text }}-->
+        </div>
+
+        <br><br>
+
+    </body>
+</html>
