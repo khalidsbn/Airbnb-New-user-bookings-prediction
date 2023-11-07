@@ -19,7 +19,7 @@ df['TARGET'] = label_encoder.fit_transform(df.TARGET)
 
 X, y = df.drop('TARGET', axis=1), df['TARGET']
 xgb = XGBClassifier()
-xgb.fit(X_train, y_train)
+xgb.fit(X, y)
 
 # Pickle model
-pickle.dump(xgb, open("model.pkl", "wb"))
+#pickle.dump(xgb, open("model.pkl", "wb"))

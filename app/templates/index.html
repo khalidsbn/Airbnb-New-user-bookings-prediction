@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>AirBnB</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
     </head>
 
     <body>
@@ -35,6 +35,16 @@
                     <input type="text" name="age" required="required" />
                 </p>
 
+                <!--signup_method (object)-->
+                <p>Signup method:
+                    <select name="signup_method" required="required">
+                        <option value="">...</option>
+                        <option value="basic">Using Email to sign up</option>
+                        <option value="facebook">Using Facebook to sign up</option>
+                        <option value="google">Using Google to sign up</option>
+                    </select>
+                </p>
+
                 <!--language (float64)-->
                 <p>Your first Language:
                     <select name="language" required="required">
@@ -49,49 +59,8 @@
                         <option value="russian">Russian</option>
                         <option value="other">Other</option>
                     </select>
-                </p>                
-
-                <!--year_account_created (int)-->
-                <p>When you created your account (year):
-                    <select name="year_account_created" required="required">
-                        <option value="">...</option>
-                        <option value="2010">2010</option>
-                        <option value="2011">2011</option>
-                        <option value="2012">2012</option>
-                        <option value="2013">2013</option>
-                        <option value="2014">2014</option>
-                    </select>
-                </p>
-
-                <!--month_account_created (int)-->
-                <p>When you created your account (year):
-                    <select name="month_account_created" required="required">
-                        <option value="">...</option>
-                        <option value="1">January</option>
-                        <option value="2">February</option>
-                        <option value="3">March</option>
-                        <option value="4">April</option>
-                        <option value="5">May</option>
-                        <option value="6">June</option>
-                        <option value="7">July</option>
-                        <option value="8">August</option>
-                        <option value="9">September</option>
-                        <option value="10">October</option>
-                        <option value="11">November</option>
-                        <option value="12">December</option>
-                    </select>
-                </p>                
-
-                <!--signup_method (object)-->
-                <p>Signup method:
-                    <select name="signup_method" required="required">
-                        <option value="">...</option>
-                        <option value="basic">Using Email to sign up</option>
-                        <option value="facebook">Using Facebook to sign up</option>
-                        <option value="google">Using Google to sign up</option>
-                    </select>
-                </p>
-
+                </p>  
+                
                 <!--affiliate_provider (object)-->
                 <p>Affiliate provider:
                     <select name="affiliate_provider" required="required">
@@ -103,7 +72,7 @@
                         <option value="yahoo">Yahoo</option>
                         <option value="other">Other</option>
                     </select>
-                </p>                
+                </p>  
 
                 <!--first_affiliate_tracked (object)-->
                 <p>Where did you see the airbnb for the first time:
@@ -154,6 +123,37 @@
                         <option value="Other Browser">Other Browser</option>
                     </select>
                 </p>
+
+                <!--year_account_created (int)-->
+                <p>When you created your account (year):
+                    <select name="year_account_created" required="required">
+                        <option value="">...</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                    </select>
+                </p>
+
+                <!--month_account_created (int)-->
+                <p>When you created your account (year):
+                    <select name="month_account_created" required="required">
+                        <option value="">...</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+                </p>         
 
                 <button type="submit" class="btn btn-primary btn-block btn-large">Answer</button>
             </form>
