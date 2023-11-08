@@ -58,11 +58,11 @@ After ruinning the app.py you will see:
 
 6. After entering your information about first login in Airbnb, you will get either:
 
-<img src="./app/static/img/asnwer_1.png" width="800"/>
+<img src="./app/static/img/answer_1.png" width="800"/>
 
 or:
 
-<img src="../app/static/img/asnwer_2.png" width="800"/>
+<img src="./app/static/img/answer_2.png" width="800"/>
 
 ## Known issues
 sessions.csv wasn't included in the data folder due to its huge size. 
