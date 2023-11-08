@@ -31,8 +31,40 @@ In order to "run" the provided codes; jupyter notebook or vsCode.
 * lightgbm
 * xgboost
 
-image
+## Getting the app running localy
+1. Colone this repo
+```
+git clone https://github.com/khalidsbn/Users-destination.git
+```
+2. Create and activate a virtual environment
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+3. Install the required dependencies (pandas, Numpy, etc)
+```
+pip install -r requirements.txt
+```
+4. Change into the `app` directory
+```
+cd app
+```
+5. Run app.py
+
+After ruinning the app.py you will see:
+
+<img src="./app/static/img/dashbord.png" width="800"/>
+
+
+6. After entering your information about first login in Airbnb, you will get either:
+
+<img src="./app/static/img/asnwer_1.png" width="800"/>
+
+or:
+
+<img src="../app/static/img/asnwer_2.png" width="800"/>
 
 ## Known issues
 sessions.csv wasn't included in the data folder due to its huge size. 
+
 
