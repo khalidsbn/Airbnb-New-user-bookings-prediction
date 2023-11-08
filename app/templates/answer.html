@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>AirBnB</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+
+    <body>
+        <h1>Avoid losing time</h1>
+
+        <div class="nav-bar">
+            <ul>
+                <li><a href="{{ url_for('home')}}" >Back to the main page</a></li>
+            </ul>
+        </div>
+
+        <br>
+
+        <div class="answer-paragraph">
+            <p>
+                {{ prediction_text }}
+            </p>
+        </div>
+
+        
+
+    </body>
+</html>

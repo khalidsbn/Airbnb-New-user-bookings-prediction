@@ -12,17 +12,17 @@
         <div class="login">
             <!-- Main Input For Receiving Query to our ML -->
             <form action="{{ url_for('predict')}}" method="post" class="input-group">
-                {{ prediction_text }}
+                <!--{{ prediction_text }}-->
 
                 <br>
 
                 <p>
-                    make an app the tell the new users if they canna bok or not, so if it is not it is the best for them to delete the app
-                    and don't lose their time.
+                    You are a new user of AirBnB and you want to know if you are going to make a book or not. 
+                    You are in the right place,  just enter your information and see the magic happen.
                 </p>
 
                 <!--gender (object)-->
-                <p>gender:
+                <p>Your gender:
                     <select name="gender" required="required">
                         <option value="">...</option>
                         <option value="FEMALE">F</option>
@@ -31,12 +31,12 @@
                 </p>
 
                 <!--age (float64)-->
-                <p>Age:
+                <p>Your age:
                     <input type="text" name="age" required="required" />
                 </p>
 
                 <!--signup_method (object)-->
-                <p>Signup method:
+                <p>Which method you use to sign up:
                     <select name="signup_method" required="required">
                         <option value="">...</option>
                         <option value="basic">Using Email to sign up</option>
@@ -62,7 +62,7 @@
                 </p>  
                 
                 <!--affiliate_provider (object)-->
-                <p>Affiliate provider:
+                <p>Where did you see the airbnb for the first time::
                     <select name="affiliate_provider" required="required">
                         <option value="">...</option>
                         <option value="direct">Direct</option>
@@ -75,7 +75,7 @@
                 </p>  
 
                 <!--first_affiliate_tracked (object)-->
-                <p>Where did you see the airbnb for the first time:
+                <p>It was as:
                     <select name="first_affiliate_tracked" required="required">
                         <option value="">...</option>
                         <option value="ads">Ads</option>
@@ -98,7 +98,7 @@
                 </p>
 
                 <!--first_device_type (object)-->
-                <p>First device type:
+                <p>First device you use to sign up:
                     <select name="first_device_type" required="required">
                         <option value="">...</option>
                         <option value="MacBook">MacBook</option>
@@ -125,7 +125,7 @@
                 </p>
 
                 <!--year_account_created (int)-->
-                <p>When you created your account (year):
+                <p>Year when you created your account:
                     <select name="year_account_created" required="required">
                         <option value="">...</option>
                         <option value="2010">2010</option>
@@ -137,7 +137,7 @@
                 </p>
 
                 <!--month_account_created (int)-->
-                <p>When you created your account (year):
+                <p>And the month was:
                     <select name="month_account_created" required="required">
                         <option value="">...</option>
                         <option value="1">January</option>
@@ -159,7 +159,6 @@
             </form>
 
             <br><br>
-            <!--{{ prediction_text }}-->
         </div>
 
         <br><br>
