@@ -21,7 +21,7 @@ Airbnb users have over 190 countries to choose from for their first booking. If 
     - **04.preparing_data_for_project_2.ipynb**: Prepare and correct the main dataset (train_users_2) for second project.
 
 ## Project 1:
-The first project is a dataset about Airbnb users. The aim is to use it and predict which country new users will book her/his first destination. It is a kaggle competition.
+The first project is a dataset about Airbnb users. The aim is to use it and predict which country new users will book their first destination. It is a kaggle competition.
 The files of this project are `jupyter notebooks` in the notebooks folder.
 
 ## Project 2:
@@ -56,7 +56,7 @@ After ruinning the app.py you will see:
 <img src="./app/static/img/dashbord.png" width="800"/>
 
 
-6. After entering your information about first login in Airbnb, you will get either:
+6. After entering your information about first login in Airbnb, you will get either as an enswer:
 
 <img src="./app/static/img/answer_1.png" width="800"/>
 

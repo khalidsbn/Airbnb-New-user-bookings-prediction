@@ -1,5 +1,5 @@
 .venv/*
 .DS_Store
 app/__pycache__
-app/.ipynb_checkpoints
-notebooks/.ipynb_checkpoints
+app/.ipynb_checkpoints/*
+notebooks/.ipynb_checkpoints/*
